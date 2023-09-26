@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate';
 // import '../Pagination/pagination.css'
-import styles  from './pagination.module.scss';
+
 
 
 const Pagination = ({ info, pageNumber,   setPageNumber }) => {
@@ -47,8 +47,8 @@ return (
             forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
             nextLabel="Next "
             previousLabel="Prev"
-            previousClassName="btn btn-primary fs-5 prev"
-            nextClassName="btn btn-primary fs-5 next"
+            previousClassName="btn btn-primary  prev"
+            nextClassName="btn btn-primary  next"
             pageClassName="page-item"
             activeClassName='active'
             marginPagesDisplayed={width < 576 ? 1 : 2}
